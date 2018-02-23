@@ -1,20 +1,20 @@
 import { RouterModule, Routes } from '@angular/router';
-import { LayoutComponent } from './layout/layout.component'
+import { LayoutComponent } from './layout/layout.component';
 
 export const AppRouting: Routes = [
     {
-        path: "",
+        path: '',
         component: LayoutComponent,
         children: [
             {
-                path: "",
-                redirectTo: "unicode",
-                pathMatch: "full"
+                path: '',
+                redirectTo: 'unicode',
+                pathMatch: 'full'
             },
             {
-                path: "unicode",                
-                loadChildren: "./pages/unicode/unicode.module#UnicodeModule",
+                path: 'unicode',
+                loadChildren: './pages/unicode/unicode.module#UnicodeModule',
             }
         ]
     }
-]
+];

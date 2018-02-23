@@ -3,25 +3,20 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { Component } from '@angular/core/src/metadata/directives';
 
-import { UnicodeComponent }   from './unicode.component';
+import { UnicodeComponent } from './unicode.component';
 
-const UnicodeRoutes: Routes = [
-    {
-      path: "",
-      component: UnicodeComponent
-    }
-]
+export const UnicodeRoutes: Routes = [
+  {
+    path: '',
+    component: UnicodeComponent
+  }
+];
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(UnicodeRoutes)
   ],
-  declarations: [
-    UnicodeComponent,
-  ],
-  exports: [
-    RouterModule
-  ]
+  declarations: [UnicodeComponent]
 })
 export class UnicodeModule { }
